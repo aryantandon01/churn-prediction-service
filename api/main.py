@@ -35,7 +35,7 @@ class CustomerFeatures(BaseModel):
     MonthlyCharges: float
     TotalCharges: float
 
-@app.get("/")
+@app.get("/read")
 def read_root():
     return {"message": "Churn prediction API is up!"}
 
